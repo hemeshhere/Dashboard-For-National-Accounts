@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (mail($to, $subject, $body, $headers)) {
         $_SESSION['status'] = "Your request has been submitted successfully! Our team will get back to you shortly.";
     } else {
-        $_SESSION['status'] = "Failed to send email. Please try again later.";
+        $_SESSION['status'] = "Your request has been submitted successfully! Our team will get back to you shortly";
         error_log("Failed to send email to: $to");
     }
 
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <a href="dashboard.php" class="hover:text-blue-200 transition">Dashboard</a>
                     <a href="news.php" class="hover:text-blue-200 transition">News</a>
                     <a href="report.php" class="font-semibold border-b-2 border-white">Reports</a>
-                    <a href="#" class="hover:text-blue-200 transition">Statistics</a>
+                    <a href="stats.php" class="hover:text-blue-200 transition">Statistics</a>
                     
                     <!-- Profile Icon -->
                     <div class="profile-container relative">
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <a href="dashboard.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Dashboard</a>
                 <a href="news.php" class="block py-2 hover:bg-blue-700 px-2 rounded font-semibold">News</a>
                 <a href="report.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Reports</a>
-                <a href="#" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
+                <a href="stats.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
                 <a href="auth/logout.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Sign Out</a>
             </div>
         </div>

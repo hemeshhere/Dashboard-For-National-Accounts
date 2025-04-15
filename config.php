@@ -23,7 +23,6 @@ function update_user_password($username, $new_password) {
     return false;
 }
 
-// Function to verify login (plain text comparison)
 function verify_login($username, $password) {
     global $valid_users;
     return isset($valid_users[$username]) && 
