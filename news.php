@@ -32,7 +32,7 @@ require_once 'includes/auth_check.php';
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
                     <i class="fas fa-landmark text-2xl"></i>
-                    <span class="text-xl font-bold">National Accounts</span>
+                    <span class="text-xl font-bold">Indian National Accounts</span>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-6">
@@ -86,13 +86,13 @@ require_once 'includes/auth_check.php';
     </nav>
 
     <main class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-gray-800 mb-8">Latest News & Updates</h1>
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">Latest News & Updates from MoSPI</h1>
         
         <!-- Trending News Section with Slider -->
         <section class="mb-12">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-semibold text-gray-800">Trending News</h2>
-                <a href="#" class="text-blue-600 hover:underline">View All</a>
+                <h2 class="text-2xl font-semibold text-gray-800">Trending Indian Economic News</h2>
+                <a href="https://economictimes.indiatimes.com/news/economy?from=mdr" class="text-blue-600 hover:underline">View All</a>
             </div>
             
             <div class="relative">
@@ -106,65 +106,65 @@ require_once 'includes/auth_check.php';
                 
                 <!-- News slider container with pre-filled content -->
                 <div id="news-slider" class="news-slider flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide">
-                    <!-- Trending News 1 -->
-                    <div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
-                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Economy growth" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">National GDP Growth Exceeds Expectations</h3>
-                                <p class="text-gray-600 mb-4">The latest economic reports show GDP growth of 3.2% this quarter, surpassing analyst predictions and indicating strong economic recovery.</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">Jan 15, 2025</span>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Trending News 1: Indian GDP -->
+<div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
+        <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202408/66d1b6d45ddaa-india-q1-gdp-growth-preview-304215469-16x9.jpg?size=948:533" alt="India GDP" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">India's GDP Growth at 7.8% in Q1 2024-25</h3>
+            <p class="text-gray-600 mb-4">MoSPI releases provisional estimates showing robust GDP growth driven by services and manufacturing sectors.</p>
+            <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">May 31, 2025</span>
+                <a href="https://www.businesstoday.in/latest/economy/story/india-gdp-growth-economy-grew-at-at-67-in-the-april-june-quarter-in-fy25-lower-than-78-in-fy24-443724-2024-08-30" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
                     
-                    <!-- Trending News 2 -->
-                    <div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tax reform" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">New Tax Reform Bill Proposed</h3>
-                                <p class="text-gray-600 mb-4">The finance minister has introduced a comprehensive tax reform package aimed at simplifying the system and reducing burdens on middle-class families.</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">Feb 12, 2025</span>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Trending News 2: CPI Inflation -->
+<div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
+        <img src="https://www.hindustantimes.com/ht-img/img/2024/03/12/550x309/Retail-prices-in-pulses-increased-5-28--in-April--_1685733970454_1710274750496.jpg" alt="CPI Inflation" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">CPI Inflation Remains Stable at 5.1% (Mar 2025)</h3>
+            <p class="text-gray-600 mb-4">Consumer Price Index data released by MoSPI shows inflation is within RBI's target range for the third consecutive month.</p>
+            <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">Apr 12, 2025</span>
+                <a href="https://www.hindustantimes.com/india-news/inflation-stays-flat-at-5-09-in-february-101710271772579.html" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
                     
-                    <!-- Trending News 3 -->
-                    <div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
-                            <img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stock market" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">Stock Market Hits Record High</h3>
-                                <p class="text-gray-600 mb-4">The national stock index reached an all-time high today, driven by strong performances in the technology and manufacturing sectors.</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">Dec 10, 2024</span>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Trending News 3: Fiscal Deficit -->
+<div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
+        <img src="https://www.livemint.com/lm-img/img/2024/03/28/600x338/g0ee171de9e07326816b4ab86404a5c06bfc360e3459e5f2daae9a8216473f716823174ece05ec1616b9f95cffb5fae2ba04a0be7a358a3490dde5afa226486ed_1280_1711627390249_1711627402462.jpg" alt="Fiscal Deficit" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Fiscal Deficit at 82.8% of BE (Apr-Feb FY25)</h3>
+            <p class="text-gray-600 mb-4">The Controller General of Accounts reports fiscal deficit at 82.8% of Budget Estimate for the current fiscal year.</p>
+            <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">Mar 31, 2025</span>
+                <a href="https://www.livemint.com/economy/aprfeb-fiscal-deficit-at-15-trillion-86-5-of-fy24-target-11711626884147.html" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
                     
-                    <!-- Trending News 4 -->
-                    <div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Employment" class="w-full h-48 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">Unemployment Rate Drops to 4.2%</h3>
-                                <p class="text-gray-600 mb-4">The latest employment figures show unemployment has fallen to its lowest level in a decade, with significant gains in the service sector.</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm text-gray-500">Mar 8, 2025</span>
-                                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Trending News 4: Unemployment Rate -->
+<div class="flex-shrink-0 w-full md:w-2/3 lg:w-1/2 xl:w-1/3 snap-start">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition mx-2 h-full">
+        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-07/03/full/1656867405-8526.jpg?im=FeatureCrop,size=(826,465)" alt="Employment India" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Unemployment Rate Falls to 6.8% (Mar 2025)</h3>
+            <p class="text-gray-600 mb-4">CMIE data shows India's unemployment rate declined in March, with job gains in rural and urban sectors.</p>
+            <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">Mar 31, 2025</span>
+                <a href="https://www.business-standard.com/economy/news/india-s-urban-jobless-rate-declined-further-to-6-8-in-q4-nso-survey-123052900991_1.html" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
         </section>
@@ -172,8 +172,8 @@ require_once 'includes/auth_check.php';
         <!-- Government Policies Section -->
         <section class="mb-12">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-semibold text-gray-800">Government Policies</h2>
-                <a href="#" class="text-blue-600 hover:underline">View All</a>
+                <h2 class="text-2xl font-semibold text-gray-800">Recent Policy Announcements</h2>
+                <a href="https://dge.gov.in/dge/schemes_programmes" class="text-blue-600 hover:underline">View All</a>
             </div>
             
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -182,12 +182,12 @@ require_once 'includes/auth_check.php';
                     <div class="p-4 hover:bg-gray-50 transition">
                         <div class="flex flex-col md:flex-row md:items-center gap-4">
                             <div class="flex-1">
-                                <h3 class="text-lg font-semibold mb-1">New Infrastructure Investment Plan</h3>
-                                <p class="text-gray-600 text-sm">The government has announced a $1.2 trillion infrastructure plan focusing on roads, bridges, and broadband expansion across rural areas.</p>
+                                <h3 class="text-lg font-semibold mb-1">PM Gati Shakti Master Plan Launched</h3>
+<p class="text-gray-600 text-sm">The Government of India launches the PM Gati Shakti National Master Plan to boost multi-modal connectivity and infrastructure development.</p>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm text-gray-500 block mb-2">Dec 14, 2024</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                                <a href="https://ne.pmgatishakti.gov.in/DoNER/about_pmgati" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -196,12 +196,12 @@ require_once 'includes/auth_check.php';
                     <div class="p-4 hover:bg-gray-50 transition">
                         <div class="flex flex-col md:flex-row md:items-center gap-4">
                             <div class="flex-1">
-                                <h3 class="text-lg font-semibold mb-1">Climate Change Action Bill Passed</h3>
-                                <p class="text-gray-600 text-sm">Parliament has approved sweeping legislation to reduce carbon emissions by 50% by 2030, with incentives for renewable energy adoption.</p>
+                                <h3 class="text-lg font-semibold mb-1">Union Budget 2025-26 Presented</h3>
+<p class="text-gray-600 text-sm">The Finance Minister presents the Union Budget, focusing on capital expenditure, rural development, and digital economy initiatives.</p>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm text-gray-500 block mb-2">Jan 1, 2025</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                                <a href="https://www.india.gov.in/spotlight/union-budget-2025-2026#:~:text=%2D%20the%20Finance%20Minister%20presented%20the,cent%20good%20quality%20school%20education" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -210,12 +210,12 @@ require_once 'includes/auth_check.php';
                     <div class="p-4 hover:bg-gray-50 transition">
                         <div class="flex flex-col md:flex-row md:items-center gap-4">
                             <div class="flex-1">
-                                <h3 class="text-lg font-semibold mb-1">Healthcare Reform Package Introduced</h3>
-                                <p class="text-gray-600 text-sm">A new healthcare proposal aims to lower prescription drug costs and expand coverage to an additional 5 million citizens.</p>
+                                <h3 class="text-lg font-semibold mb-1">PLI Scheme Extended to New Sectors</h3>
+<p class="text-gray-600 text-sm">The Production-Linked Incentive (PLI) scheme is extended to additional sectors to boost manufacturing and exports.</p>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm text-gray-500 block mb-2">Oct 7, 2024</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                                <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=2114011" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -224,12 +224,12 @@ require_once 'includes/auth_check.php';
                     <div class="p-4 hover:bg-gray-50 transition">
                         <div class="flex flex-col md:flex-row md:items-center gap-4">
                             <div class="flex-1">
-                                <h3 class="text-lg font-semibold mb-1">Education Funding Increase Approved</h3>
-                                <p class="text-gray-600 text-sm">The education budget will increase by 15% next year, with focus on teacher salaries and STEM programs in underserved communities.</p>
+                                <h3 class="text-lg font-semibold mb-1">National Education Policy (NEP) Implementation Update</h3>
+<p class="text-gray-600 text-sm">MoE provides an update on NEP 2020 implementation, with focus on digital learning and skill development.</p>
                             </div>
                             <div class="text-right">
                                 <span class="text-sm text-gray-500 block mb-2">Mar 5, 2025</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                                <a href="https://www.education.gov.in/nep/about-nep" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@ require_once 'includes/auth_check.php';
         <section>
             <div class="flex items-center justify-between mb-6">
                 <h2 class="text-2xl font-semibold text-gray-800">Global Business News</h2>
-                <a href="#" class="text-blue-600 hover:underline">View All</a>
+                <a href="https://www.cnbc.com/world/" class="text-blue-600 hover:underline">View All</a>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -252,7 +252,7 @@ require_once 'includes/auth_check.php';
                         <p class="text-gray-600 mb-4 text-sm">The ECB has increased rates by 0.5% to combat inflation, causing mixed reactions in financial markets across the continent.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-xs text-gray-500">Feb 13, 2025</span>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                            <a href="https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp250306~d4340800b3.en.html" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@ require_once 'includes/auth_check.php';
                         <p class="text-gray-600 mb-4 text-sm">Major Asian indices gained 2-3% after reports of progress in regional trade negotiations between several Pacific nations.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-xs text-gray-500">Feb 19, 2025</span>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                            <a href="https://timesofindia.indiatimes.com/business/international-business/asian-markets-rally-as-they-adjust-to-temporary-us-tariff-relief-by-donald-trump/articleshow/120301768.cms" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@ require_once 'includes/auth_check.php';
                         <p class="text-gray-600 mb-4 text-sm">The African Continental Free Trade Area reports 34% increase in intra-African trade volumes in Q1 2025.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-xs text-gray-500">Mar 13, 2025</span>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                            <a href="https://unctad.org/es/isar/news/africas-free-trade-area-can-deliver-considerable-inclusive-economic-growth-continent" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@ require_once 'includes/auth_check.php';
                         <p class="text-gray-600 mb-4 text-sm">Despite global challenges, several Latin American countries are reporting stronger-than-expected economic performance this quarter.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-xs text-gray-500">Mar 24, 2025</span>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
+                            <a href="https://credendo.com/en/knowledge-hub/brazil-largest-latin-american-economy-displays-remarkable-resilience-amid-headwinds#:~:text=Largest%20Latin%20American%20economy%20displays%20resilience%20amid%20headwinds,surpassing%20its%20own%20historical%20performance." class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -300,27 +300,28 @@ require_once 'includes/auth_check.php';
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">National Accounts</h3>
-                    <p class="text-gray-400">Official economic data and news portal.</p>
+                    <h3 class="text-xl font-bold mb-4">Indian National Accounts</h3>
+<p class="text-gray-400">Official economic data and news portal by the Ministry of Statistics and Programme Implementation (MoSPI), Government of India.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="dashboard.php" class="text-gray-400 hover:text-white transition">Dashboard</a></li>
-                        <li><a href="news.php" class="text-gray-400 hover:text-white transition">News</a></li>
-                        <li><a href="report.php" class="text-gray-400 hover:text-white transition">Reports</a></li>
-                    </ul>
+<ul class="space-y-2">
+    <li><a href="dashboard.php" class="text-gray-400 hover:text-white transition">Dashboard</a></li>
+    <li><a href="news.php" class="text-gray-400 hover:text-white transition">News</a></li>
+    <li><a href="report.php" class="text-gray-400 hover:text-white transition">Reports</a></li>
+    <li><a href="https://mospi.gov.in/" target="_blank" class="text-gray-400 hover:text-white transition">MoSPI Official Site</a></li>
+</ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2">
-                        <li class="text-gray-400"><i class="fas fa-envelope mr-2"></i> contact@nationalaccounts.gov</li>
-                        <li class="text-gray-400"><i class="fas fa-phone mr-2"></i> +91 9890000011</li>
-                    </ul>
+<ul class="space-y-2">
+    <li class="text-gray-400"><i class="fas fa-envelope mr-2"></i> info@mospi.gov.in</li>
+    <li class="text-gray-400"><i class="fas fa-phone mr-2"></i> +91-11-2336 0889</li>
+</ul>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-                <p>&copy; 2025 National Accounts Dashboard. All rights reserved.</p>
+                <p>&copy; 2025 Indian National Accounts Dashboard. All rights reserved.</p>
             </div>
         </div>
     </footer>

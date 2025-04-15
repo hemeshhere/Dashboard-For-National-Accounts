@@ -185,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   function logout() {
     if (confirm("Are you sure you want to logout?")) {
-      window.location.href = "login.php"; 
+      window.location.href = "auth/logout.php"; 
     }
   }
 </script>
