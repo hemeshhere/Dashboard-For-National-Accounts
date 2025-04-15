@@ -39,7 +39,7 @@ require_once 'includes/auth_check.php';
                     <a href="dashboard.php" class="hover:text-blue-200 transition">Dashboard</a>
                     <a href="news.php" class="font-semibold border-b-2 border-white">News</a>
                     <a href="report.php" class="hover:text-blue-200 transition">Reports</a>
-                    <a href="#" class="hover:text-blue-200 transition">Statistics</a>
+                    <a href="stats.php" class="hover:text-blue-200 transition">Statistics</a>
                     
                     <!-- Profile Icon -->
                     <div class="profile-container relative">
@@ -78,8 +78,8 @@ require_once 'includes/auth_check.php';
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <a href="dashboard.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Dashboard</a>
                 <a href="news.php" class="block py-2 hover:bg-blue-700 px-2 rounded font-semibold">News</a>
-                <a href="#" class="block py-2 hover:bg-blue-700 px-2 rounded">Reports</a>
-                <a href="#" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
+                <a href="report.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Reports</a>
+                <a href="stats.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
                 <a href="auth/logout.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Sign Out</a>
             </div>
         </div>

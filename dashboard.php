@@ -33,7 +33,7 @@ require_once 'includes/auth_check.php';
                     <a href="dashboard.php" class="font-semibold border-b-2 border-white">Dashboard</a>
                     <a href="news.php" class="hover:text-blue-200 transition">News</a>
                     <a href="report.php" class="hover:text-blue-200 transition">Reports</a>
-                    <a href="#" class="hover:text-blue-200 transition">Statistics</a>
+                    <a href="stats.php" class="hover:text-blue-200 transition">Statistics</a>
                     
                     <!-- Profile Icon -->
                     <div class="profile-container relative">
@@ -73,7 +73,7 @@ require_once 'includes/auth_check.php';
                 <a href="dashboard.php" class="block py-2 hover:bg-blue-700 px-2 rounded font-semibold">Dashboard</a>
                 <a href="news.php" class="block py-2 hover:bg-blue-700 px-2 rounded">News</a>
                 <a href="report.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Reports</a>
-                <a href="#" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
+                <a href="stats.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Statistics</a>
                 <a href="auth/logout.php" class="block py-2 hover:bg-blue-700 px-2 rounded">Sign Out</a>
             </div>
         </div>
@@ -126,11 +126,11 @@ require_once 'includes/auth_check.php';
                         <i class="fas fa-newspaper text-blue-600 text-xl mb-2"></i>
                         <p class="text-sm font-medium">View News</p>
                     </a>
-                    <a href="#" class="bg-green-50 hover:bg-green-100 p-3 rounded-lg text-center transition">
+                    <a href="report.php" class="bg-green-50 hover:bg-green-100 p-3 rounded-lg text-center transition">
                         <i class="fas fa-file-export text-green-600 text-xl mb-2"></i>
                         <p class="text-sm font-medium">Generate Report</p>
                     </a>
-                    <a href="#" class="bg-purple-50 hover:bg-purple-100 p-3 rounded-lg text-center transition">
+                    <a href="stats.php" class="bg-purple-50 hover:bg-purple-100 p-3 rounded-lg text-center transition">
                         <i class="fas fa-chart-pie text-purple-600 text-xl mb-2"></i>
                         <p class="text-sm font-medium">View Stats</p>
                     </a>
