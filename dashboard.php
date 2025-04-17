@@ -26,6 +26,7 @@ require_once 'includes/auth_check.php';
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="dashboard.php" class="font-semibold border-b-2 border-white">Dashboard</a>
+                    
                     <a href="news.php" class="hover:text-blue-200 transition">News</a>
                     <a href="report.php" class="hover:text-blue-200 transition">Reports</a>
                     <a href="stats.php" class="hover:text-blue-200 transition">Statistics</a>
@@ -46,6 +47,9 @@ require_once 'includes/auth_check.php';
                             </div>
                             <a href="account.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                 <i class="fas fa-user-circle mr-2"></i> Profile: <?php echo htmlspecialchars($_SESSION['username']); ?>
+                            </a>
+                            <a href="switch_auth.php?type=admin" class="block px-4 py-2 text-sm text-black hover:bg-red-800 rounded mb-2 flex items-center">
+                                <i class="fas fa-user-shield mr-2"></i>Switch to Admin Dashboard
                             </a>
                             <a href="auth/logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                 <i class="fas fa-sign-out-alt mr-2"></i> Sign Out

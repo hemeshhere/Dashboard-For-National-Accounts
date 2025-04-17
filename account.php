@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a href="dashboard.php" class="hover:text-blue-200 transition">Dashboard</a>
         <a href="news.php" class="hover:text-blue-200 transition">News</a>
         <a href="report.php" class="hover:text-blue-200 transition">Reports</a>
-        <a href="#" class="hover:text-blue-200 transition">Statistics</a>
+        <a href="stats.php" class="hover:text-blue-200 transition">Statistics</a>
         <a href="account.php" class="hover:text-blue-200 border-b-2 border-white transition font-semibold">Account</a>
       </div>
       <div class="md:hidden">
