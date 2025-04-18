@@ -107,6 +107,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="login.php?admin=1" class="w-full block mt-3 text-center border-2 border-blue-500 text-blue-700 py-2 px-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-200">
         Sign In as Admin
     </a>
+<?php else: ?>
+    <a href="login.php" class="w-full block mt-3 text-center border-2 border-blue-500 text-blue-700 py-2 px-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-200">
+        Back to User Login
+    </a>
 <?php endif; ?>
 
                 </form>
@@ -137,8 +141,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="w-4 h-4 bg-blue-200 rounded-lg"></div>
                 <div class="w-6 h-6 bg-blue-300 rounded-lg"></div>
                 <div class="w-3 h-3 bg-blue-400 rounded-lg"></div>
-                <div class="w-6 h-6 bg-yellow-300 rounded-lg"></div>
-                <div class="w-3 h-3 bg-yellow-400 rounded-lg"></div>
             </div>
         </div>
     </div>

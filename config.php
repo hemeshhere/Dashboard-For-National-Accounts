@@ -52,6 +52,23 @@ $createAdminTableSQL = "CREATE TABLE IF NOT EXISTS admin (
 if (!$conn->query($createAdminTableSQL)) {
     die('Failed to create admin table: ' . $conn->error);
 }
+// Ensure default admin exists
+$check = $conn->prepare("SELECT id FROM admin WHERE username = ?");
+$admin_user = 'admin';
+$check->bind_param("s", $admin_user);
+$check->execute();
+$check->store_result();
+if ($check->num_rows === 0) {
+    $insert = $conn->prepare("INSERT INTO admin (username, password, name, email) VALUES (?, ?, ?, ?)");
+    $username = 'admin';
+    $password = 'admin123';
+    $name = 'admin';
+    $email = 'admin@gmail.com';
+    $insert->bind_param("ssss", $username, $password, $name, $email);
+    $insert->execute();
+    $insert->close();
+}
+$check->close();
 
 
 function get_user($username) {
