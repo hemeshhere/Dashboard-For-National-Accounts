@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // First step - username submission
         $username = trim($_POST['username'] ?? '');
         
-        if (isset($valid_users[$username])) {
+        $user = get_user($username);
+        if ($user) {
             $_SESSION['reset_user'] = $username;
             $show_question = true;
         } else {
@@ -21,14 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = $_SESSION['reset_user'] ?? '';
         $answer = strtolower(trim($_POST['security_answer'] ?? ''));
         
-        if (isset($valid_users[$username]) && 
-            strtolower($valid_users[$username]['security_answer']) === $answer) {
-            
+        $user = get_user($username);
+        if ($user && strtolower($user['security_answer']) === $answer) {
             // Generate simple token (insecure for production)
             $token = md5(uniqid());
             $_SESSION['reset_token'] = $token;
             $_SESSION['reset_token_time'] = time();
-            
             // Redirect to reset page
             header("Location: reset_password.php");
             exit;
@@ -84,7 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="mb-4">
                         <p class="text-sm text-gray-600 mb-2">Security Question:</p>
                         <p class="font-medium mb-4 p-3 bg-gray-100 rounded-lg">
-                            <?= htmlspecialchars($valid_users[$_SESSION['reset_user']]['security_question']) ?>
+                            <?php
+                                $reset_user = $_SESSION['reset_user'] ?? '';
+                                $user = get_user($reset_user);
+                                echo htmlspecialchars($user['security_question'] ?? '');
+                            ?>
                         </p>
                         <label for="security_answer" class="block text-sm font-medium text-gray-700 mb-1">
                             Your Answer

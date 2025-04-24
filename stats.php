@@ -243,7 +243,7 @@ require_once 'includes/auth_check.php';
                         <span>Ayush - 89%</span>
                     </li>
                     <li class="flex items-center">
-                        <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-2">AY</span>
+                        <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-2">HP</span>
                         <span>Himesh - 83%</span>
                     </li>
                     

@@ -13,6 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($username === '' || $password === '' || $name === '' || $security_question === '' || $security_answer === '') {
         $error = "All fields are required.";
+    } elseif (preg_match('/\s/', $username)) {
+        $error = "Username must not contain spaces.";
+    } elseif (strlen($password) < 6) {
+        $error = "Password must be at least 6 characters long.";
     } elseif (!preg_match('/^[a-zA-Z ]+$/', $name)) {
         $error = "Full Name must contain only alphabets and spaces.";
     } else {

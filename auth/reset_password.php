@@ -19,16 +19,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($new_password !== $confirm_password) {
         $error = "Passwords don't match";
     } else {
-        // Update the password (in plain text)
-        if (update_user_password($_SESSION['reset_user'], $new_password)) {
-            // Clear reset session
-            unset($_SESSION['reset_user']);
-            unset($_SESSION['reset_token']);
-            unset($_SESSION['reset_token_time']);
-            
-            $success = "Password updated successfully!";
+        // Check if user exists
+        $user = get_user($_SESSION['reset_user']);
+        if (!$user) {
+            $error = "User does not exist.";
         } else {
-            $error = "Failed to update password";
+            // Update the password (in plain text)
+            if (update_user_password($_SESSION['reset_user'], $new_password)) {
+                // Clear reset session
+                unset($_SESSION['reset_user']);
+                unset($_SESSION['reset_token']);
+                unset($_SESSION['reset_token_time']);
+                
+                $success = "Password updated successfully!";
+            } else {
+                $error = "Failed to update password.";
+            }
         }
     }
 }
